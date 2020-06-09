@@ -2,7 +2,7 @@
   (keyup.escape)="closeModal()">
 
   <div>
-    <img src="/assets/artworks/{{modalContent.src}}" alt='tommy shenkar {{modalContent.name}}' loading=lazy
+    <img src="./assets/artworks/{{modalContent.src}}" alt='tommy shenkar {{modalContent.name}}' loading=lazy
       class="animated fadeIn" #imgInModal>
     <h2>{{modalContent.name}} {{modalContent.material}} {{modalContent.size}} cm</h2>
   </div>
@@ -14,7 +14,7 @@
 </div>
 
 <div class="artwork" *ngIf="artwork">
-  <img src="/assets/artworks/{{artwork.src}}" alt='tommy shenkar {{artwork.name}}' loading=lazy (click)="openModal()">
+  <img src="./assets/artworks/{{artwork.src}}" alt='tommy shenkar {{artwork.name}}' loading=lazy (click)="openModal()">
   <h2>{{artwork.name}}</h2>
   <h3>{{artwork.material}}</h3>
   <h3>{{artwork.size}} cm</h3>

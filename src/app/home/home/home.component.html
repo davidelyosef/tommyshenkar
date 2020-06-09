@@ -23,7 +23,7 @@
   <div class="portfolio marge">
     <div class="portfolio-view" *ngIf="portfolioView">
       <a routerLink="/portfolio">
-        <img *ngFor="let image of portfolioView" src="/assets/artworks/{{image.src}}" [alt]="image.name">
+        <img *ngFor="let image of portfolioView" src="./assets/artworks/{{image.src}}" [alt]="image.name">
       </a>
     </div>
   </div>
