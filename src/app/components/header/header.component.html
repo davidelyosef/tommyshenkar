@@ -1,0 +1,25 @@
+<div class="header">
+  <a routerLink="/home">
+    <img class="name" src="./assets/tommy-shenkar-logo.jpg" />
+  </a>
+  <div class="header-right">
+    <a routerLink="/home" routerLinkActive="current">Home</a>|
+    <a routerLink="/portfolio" routerLinkActive="current">Portfolio</a>|
+    <a routerLink="/about" routerLinkActive="current">About</a>|
+    <a routerLink="/contact" routerLinkActive="current">Contact</a>
+  </div>
+
+  <!-- menu navigator -->
+  <div id="toggle" (click)="activateMenu()">
+    <div class="span" id="one"></div>
+    <div class="span" id="two"></div>
+    <div class="span" id="three"></div>
+  </div>
+
+  <div ngClass="menuDropDown shadow-lg p-3 mb-5 rounded animated slideInDown" #menuDropDown>
+    <a routerLink="/home" routerLinkActive="current" (click)="activateMenu()">Home</a>
+    <a routerLink="/portfolio" routerLinkActive="current" (click)="activateMenu()">Portfolio</a>
+    <a routerLink="/about" routerLinkActive="current" (click)="activateMenu()">About</a>
+    <a routerLink="/contact" routerLinkActive="current" (click)="activateMenu()">Contact</a>
+  </div>
+</div>

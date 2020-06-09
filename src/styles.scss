@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+$headerHeight: 60px;
+
+.lds-ring {
+  display: inline-block;
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 36px solid #000000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+  font-family: lora;
+  src: url(./assets/fonts/Lora-VariableFont_wght.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  font-family: Roboto;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.wrapper {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 20px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+@media only screen and (max-width: 425px) {
+  .lds-ring {
+    width: 228px;
+    height: 200px;
+
+    div {
+      width: 200px;
+      height: 200px;
+      border-bottom-width: 20px;
+      border-top-width: 20px;
+      border-right-width: 20px;
+      border-left-width: 20px;
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+
+  .about {
+    .half {
+      width: 50%;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+      text-align: justify;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .marge {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    background-color: rgba(99, 89, 89, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+
+    h2 {
+      text-align: center;
+
+      a {
+        color: #929292;
+
+        &:hover {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .portfolio-view {
+      -webkit-column-count: 3;
+      -moz-column-count: 3;
+      column-count: 3;
+
+      img {
+        cursor: pointer;
+        width: 100% !important;
+        border: 3px solid #fff;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  .wrapper {
+    .about { 
+        .half {
+          width: 100%;
+        }
+    }
+  }
+}

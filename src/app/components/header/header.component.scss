@@ -1,0 +1,99 @@
+$headerHeight: 70px;
+
+.header {
+  position: sticky;
+  top: 0;
+  height: $headerHeight;
+  background-color: #fff;
+  z-index: 9;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  .name {
+    display: inline-block;
+    max-height: $headerHeight;
+  }
+
+  .header-right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding-right: 5%;
+    top: $headerHeight * 0.33;
+    text-transform: uppercase;
+    color: rgb(146, 146, 146);
+
+    a {
+      margin: 20px;
+      letter-spacing: 1px;
+      color: rgb(15, 15, 15);
+      text-decoration: none;
+      vertical-align: top;
+      color: rgb(146, 146, 146);
+
+      &:hover {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+      }
+    }
+
+    .current {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+    }
+  }
+
+  .menuDropDown {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #fff;
+    z-index: -1;
+
+    .current-link {
+      color: rgb(247, 89, 26);
+      font-weight: 700;
+    }
+
+    a {
+      display: block;
+      color: grey;
+      margin: 15px;
+      margin-top: 40px;
+    }
+  }
+
+  #toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    float: right;
+    margin-top: 14px;
+
+    .span {
+      height: 6px;
+      background: #000;
+      margin: 6px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 653px) {
+  .header {
+    #toggle {
+      display: inline-block;
+    }
+
+    .header-right {
+      display: none;
+    }
+
+  }
+}

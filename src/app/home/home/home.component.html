@@ -1,0 +1,30 @@
+<div class="image">
+  <img src="./assets/tommy-shenkar-1.jpg" alt="Tommy Shenkar artist">
+</div>
+<div class="wrapper">
+
+    <div class="about marge">
+        <div class="half">
+          <img src="./assets/andy-warhol-1z.jpg" alt="tommy shenkar">
+        </div>
+        <div class="half">
+            1. the quality, production, expression, or realm, according to aesthetic principles, of what is beautiful, appealing, or of more than ordinary significance.
+            <br>
+            2. the class of objects subject to aesthetic criteria; works of art collectively, aspaintings, sculptures, or drawings:a museum of art;an art collection.
+            <br>
+            3. a field, genre, or category of art.
+            <br>
+            4. the fine arts collectively, often excluding architecture.
+            <br>
+            5. any field using the skills or techniques of art.
+        </div>
+    </div>
+
+  <div class="portfolio marge">
+    <div class="portfolio-view" *ngIf="portfolioView">
+      <a routerLink="/portfolio">
+        <img *ngFor="let image of portfolioView" src="/assets/artworks/{{image.src}}" [alt]="image.name">
+      </a>
+    </div>
+  </div>
+</div>

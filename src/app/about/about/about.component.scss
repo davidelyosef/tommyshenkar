@@ -1,0 +1,32 @@
+.image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 20%;
+  padding-left: 20%;
+
+  h1 {
+      text-align: center;
+  }
+
+  .text {
+    margin-top: 20px;
+    white-space: break-spaces;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        padding-right: 5%;
+        padding-left: 5%;
+        h1 {
+            font-size: 27px;
+        }
+    }
+}

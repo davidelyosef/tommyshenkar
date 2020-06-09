@@ -1,0 +1,21 @@
+<div *ngIf="!portfolio" class="lds-ring">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>  
+<div class="image">
+  <img src="./assets/tommy-shenkar-2.jpg" alt="tommy shenkar artworks">
+</div>
+<div class="wrapper">
+
+  <ng-container *ngIf="portfolio">
+
+    <app-artwork *ngFor="let artwork of portfolio"
+    [work]='artwork'>
+    </app-artwork>
+
+  </ng-container>
+
+  <br><br>
+</div>

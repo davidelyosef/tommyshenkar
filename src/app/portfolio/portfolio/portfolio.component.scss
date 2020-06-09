@@ -1,0 +1,19 @@
+.image {
+  img {
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+}
+
+@media only screen and (max-width: 425px) {
+  .wrapper {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
