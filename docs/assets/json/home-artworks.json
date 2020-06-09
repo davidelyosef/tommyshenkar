@@ -1,0 +1,45 @@
+[
+    {
+        "src":"billie_eilish_mixed_media_on_wood_122x75.jpg", 
+        "name":"Billie Eilish" 
+,        "material":"Mixed media on wood panel" ,
+        "size":"122 x 75",
+        "id":132
+    },
+    {
+        "src":"lucky_luciano_mixed_media_on_wood_panel_122x175.jpg",
+        "name":"lucky luciano" 
+,        "material":"Mixed media on wood panel" ,
+        "size":"122 x 175",
+        "id":131
+    },
+    {
+        "src":"in_my_car_mixed_media_on_wood_panel_80x120.jpg",
+        "name":"in my car", 
+        "material":"Mixed media on wood panel" ,
+        "size":"80 x 120",
+        "id":130
+    },
+    {
+        "src":"soon_youll_be_mine_mixed_media_on_wood_panel_122x175.jpg", 
+        "name":"soon you\"ll be mine",
+        "material":"Mixed media on wood panel" ,
+        "size":"122 x 175",
+        "id":129
+    },
+    {
+        "src":"moneyMoneyMoney_mixed_media_on_wood_panel_160x70.jpg",
+        "name":"money money money",
+        "material":"Mixed media on wood panel" ,
+        "size":"160 x 70",
+        "id":57
+    },
+    {
+
+        "src":"acesHigh_mixed_media_on_wood_panel_65x75.jpg",
+        "name":"aces high",
+        "material":"Mixed media on wood panel" ,
+        "size":"65 x 75",
+        "id":4
+    }
+]
